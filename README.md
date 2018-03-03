@@ -21,10 +21,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## Biz Kimiz
 	
-  Proje Yöneticisi : [@serbayacar](https://github.com/serbayacar)
-  FrontEnd Developers : [@aysedemirel](https://github.com/aysedemirel)
-  Backend Developers :[@PakizeNurAtes](https://github.com/PakizeNurAtes)
-                      [@furkanonder](https://github.com/furkanonder)
-  Database Master : @recepcanfa
+ Proje Yöneticisi : [@serbayacar](https://github.com/serbayacar)
+ FrontEnd Developers : [@aysedemirel](https://github.com/aysedemirel)
+ Backend Developers :[@PakizeNurAtes](https://github.com/PakizeNurAtes)
+                     [@furkanonder](https://github.com/furkanonder)
+ Database Master : @recepcanfa
 
 Bize destekleriyle bu projede destek olan başta [@gokhantamkoc](https://github.com/gokhantamkoc) 'a teşekkür ederiz.
