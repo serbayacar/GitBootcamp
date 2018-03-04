@@ -9,7 +9,7 @@
 
   Ülkemizdeki sadece az sayıdaki üniversitelerimizde kendi iç iletişim ağı bulunmaktadır. Bunun yanında evrensel sosyal medya ağı bulunmaktadır. Ancak bu sosyal medya ağı ne kadar büyük olursa öğrencilerin birbirleriyle efektif iletişim sağlamaları zorlaşıcak, dış etkenler kalabalıklaşıcaktır. 
 
-  Öğrencilerin daha küçük , __sadece kendi üniversite ağları__ , bir platformda hızlı,kolay,kalabalık olmadan paylaşım yapmalarını kolaylaştıran bir üniversite duyuru platformuna gerek duyulmaktadır.
+  Öğrencilerin daha küçük , __üniversitelerden oluşan bir sosyal ağ__ , bir platformda hızlı,kolay,kalabalık olmadan paylaşım yapmalarını kolaylaştıran bir üniversite duyuru platformuna gerek duyulmaktadır.
 
 ## Teknik Alt Yapı
   Projemiz aşağıdaki alt yapıları kullanarak oluşturulmuştur.
