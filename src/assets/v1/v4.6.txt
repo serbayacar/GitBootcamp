@@ -1,0 +1,6 @@
+metronic 4.6 files
+--------------------
+apps
+global
+layouts
+pages

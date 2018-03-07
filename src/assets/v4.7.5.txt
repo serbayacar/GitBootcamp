@@ -1,0 +1,6 @@
+metronic 4.7.5 files
+--------------------
+apps
+global
+layouts
+pages
