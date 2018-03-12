@@ -81,7 +81,7 @@ if ($_SERVER['SERVER_NAME'] === '127.0.0.1') { // pickyfy localhost
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'socialEdu',
+        'database' => 'socialedu',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,

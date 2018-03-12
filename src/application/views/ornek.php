@@ -29,8 +29,7 @@
                                         </div>
                                         <div class="stat-number">
                                             <div class="title"> Total Firm Count</div>
-                                            <div class="number"> <?php foreach($allcounts as $counts ) {
-                                                echo $counts['countfirm']; } ?> 
+                                            <div class="number"> 5
                                              </div>
                                         </div>
                                     </div>
@@ -43,8 +42,7 @@
                                         </div>
                                         <div class="stat-number">
                                             <div class="title" id="periodtext"> Selected Period</div>
-                                            <div class="number" id="periodcount"> <?php foreach($countperiod as $counts ) {
-                                                echo $counts['count']; } ?> </div>
+                                            <div class="number" id="periodcount"> 4 </div>
                                         </div>
                                     </div>
                                 </div>
@@ -61,14 +59,13 @@
                                         </tr>
                                     </thead>
                                     
-                                    <?php foreach($allcounts as $counts ) {
-
-                                        echo "<tr>
-                                        <td class=\"fit\"> ".$counts['countfirm']." </td>
-                                        <td> ". $counts['countevent']." </td>
-                                        <td> ". $counts['countticket']." </td>                                       
-                                        <td> ".$counts['countweb']." </td> </tr>";
-                                    } ?>
+                                 
+                                        <tr>
+                                        <td class="fit">5 </td>
+                                        <td> 12 </td>
+                                        <td> 12 </td>                                       
+                                        <td> 3 </td> </tr>
+                                
                                     
                                   
                                 </table>
@@ -95,28 +92,6 @@
                                             <!-- START TASK LIST -->
                                             <ul class="task-list">
 
-
-                                                 <?php foreach($messagespri as $messagepri ) {
-
-                                                      echo "<li>
-                                                          <div class=\"task-checkbox\">
-                                                        <input type=\"hidden\" value=\"1\" name=\"test\" />
-                                                        <input type=\"checkbox\" class=\"liChild\" value=\"2\" name=\"test\" />
-                                                    </div>
-                                                    <div class=\"task-title\"> <span class=\"task-title-sp\">".$messagepri['mail_content_txt']."(".$messagepri['from_name'].")"."</span> <span class=\"task-bell\"> "
-                                                              . " <i class=\" \"></i> </span>  </div>"
-                                                              . " <div class=\"task-config\">
-                                                        <div class=\"task-config-btn btn-group\"> <a class=\"btn btn-sm default\" href=\"javascript:;\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-close-others=\"true\"> <i class=\"fa fa-cog\"></i> <i class=\"fa fa-angle-down\"></i> </a>
-                                                            <ul class=\"dropdown-menu pull-right\">
-                                                                <li> <a href=\"javascript:;\"> <i class=\"fa fa-check\"></i> Complete </a> </li>
-                                                               <li> <a href=\"javascript:;\"> <i class=\"fa fa-trash-o\"></i> Cancel </a> </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div></li>";
-
-
-
-                                                     } ?>
 
                                               </ul>
                                             <!-- END START TASK LIST -->
@@ -151,24 +126,14 @@
                             <div class="scroller" style="height: 305px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
                                 <div class="general-item-list">
                                     
-                                    <?php
-                                            foreach ( $support_messages as $support_message)
-                                            {
-                                                echo "<div class=\"item\">
-                                                        <div class=\"item-head\">
-                                                            <div class=\"item-details\">  <a href=\"\" class=\"item-name primary-link\">".$support_message["name_txt"]."</a> </div>
-                                                              <span class=\"item-status\"> <span class=\"badge badge-empty badge-success\"></span> ".$support_message["message_priority_txt"]."</span> </div>
-                                                            <div class=\"item-body\"> ".$support_message["mail_content_txt"]." </div>
-                                                     </div>";
-                                            }
-                                    ?>
+                                
                                     
-                                <!--    <div class="item">
+                                <div class="item">
                                         <div class="item-head">
                                             <div class="item-details">  <a href="" class="item-name primary-link">Nick Larson</a> </div>
                                             <span class="item-status"> <span class="badge badge-empty badge-success"></span> Open</span> </div>
                                         <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                    </div> -->
+                                    </div> 
                                  
                                 </div>
                             </div>
@@ -192,23 +157,7 @@
                                     <div class="scroller" style="height: 320px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
                                         <ul class="feeds">
                                                                                     
-                                             <?php foreach($gen_messages as $message ) {
-                                                   echo "<li> <a>
-                                                    <div class=\"col1\">
-                                                        <div class=\"cont\">
-                                                            <div class=\"cont-col1\">
-                                                                <div class=\"label label-sm label-".$message['icon_color']."\"> <i class=\"".$message['icon_type']."\"></i> </div>
-                                                            </div>
-                                                            <div class=\"cont-col2\">
-                                                                <div class=\"desc\">".$message['message_txt']."</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>                                                  
-                                                </a> </li>" ;                                         
-                                                 
-                                                 
-                                                 
-                                             } ?>
+                                         
                                                                   
                                         </ul>
                                     </div>
@@ -227,12 +176,11 @@
     </div>
     <div class="col-md-3">
         <!-- BEGIN PROFILE SIDEBAR -->
-        <?php include 'profilerepresentative-cont.php'; ?>
+        <!-- <?php include 'profilerepresentative-cont.php'; ?> -->
         <!-- END BEGIN PROFILE SIDEBAR -->
     </div>
 </div>
 <<script language="javascript" type="text/javascript">
-
 function getAllCount()
 {
    
@@ -278,7 +226,4 @@ function getAllCount()
         });
         
     }
-
-
-
 </script>

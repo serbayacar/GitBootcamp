@@ -133,43 +133,7 @@ $autoload['language'] = array();
   |
   |	$autoload['model'] = array('first_model' => 'first');
  */
-$autoload['model'] = array(
-    'logProcess_model',
-    'generalChangeProcess_model',
-    'representative_model',
-    'messagesfrompickyfy_model',
-    'prtGeneralProcess_model',
-    'prtTableProcess_model',
-    'searchProcess_model',
-    '_firmProcess_model',
-    'firmProcess_model',
-    'userProcess_model',
-    'User',
-    'firmChangeProcess_model', 
-    'report_model',
-    'userChangeProcess_model', 
-    'invoice_model', 
-    'photographer_model', 
-    'setFirmExplain_model',
-    'pharmacy_model', 
-    'message_model', 
-    'firmUnusual_model', 
-    'firmApprove_model', 
-    'firmEvent_model', 
-    'firmTicket_model', 
-    'firmProcessNotUsage_model', 
-    'payment_model', 
-    'translater_model',
-    'webProcess_model', 
-    'firmBeforeMeeting_model', 
-    'forgetpassword_model', 
-    'email', 'admin_model', 
-    'SearchFirm_model',
-    'firmReports_model',
-    'userPayment_model',
-    "FirmNotes_model",
-    "menuConfig_model","firmLink_model","linkPayment_model","eventProcess_model"
-);
+$autoload['model'] = array();
 
 //$autoload['helper'] = array('language', 'home', 'url');
 

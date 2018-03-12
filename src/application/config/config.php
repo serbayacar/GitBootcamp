@@ -29,9 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 if ($_SERVER['SERVER_NAME'] === '127.0.0.1') {
     $config['base_url'] = '';
-} else {
-    $config['base_url'] = 'https://pickyfy.at/';
-}
+} 
 /*
   |--------------------------------------------------------------------------
   | Index File
