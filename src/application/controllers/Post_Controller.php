@@ -56,6 +56,9 @@ class Post_Controller extends CI_Controller{
 			    		<td> ". $row["thread_id"] ."</td>
 			    		<td> ". $row["user_account_id"] ."</td>
 			    		<td> ". $row["postStatus"] ."</td>
+                        <td> ". $row["status"] ."</td>
+                        <td> ". $row["category_id"] ."</td>
+
     		    	</tr> ";
 
     	}
@@ -68,13 +71,24 @@ class Post_Controller extends CI_Controller{
     	
     	foreach ($data as $row) {
     		$HTML .= "<tr role=\"row\" class=\"odd\">
-			    		<td class=\"sorting_1\">" .$row[id]."</td>
-			    		<td> ". $row["name"] ."</td>
-			    		<td> ". $row["description"] ."</td>
-			    		<td> ". $row["creator"] ."</td>
-			    		<td> ". $row["created"] ."</td>
-			    		<td> ". $row["category_status"] ."</td>
-    		    	</tr> ";
+                        <td class=\"sorting_1\">" .$row[id]."</td>
+                        <td> ". $row["subject"] ."</td>
+                        <td> ". $row["content"] ."</td>
+                        <td> ". $row["created"] ."</td>
+                        <td> ". $row["thread_id"] ."</td>
+                        <td> ". $row["user_account_id"] ."</td>
+                        <td> ". $row["postStatus"] ."</td>
+                        <td> ". $row["status"] ."</td>
+                        <td> ". $row["category_id"] ."</td>
+                        <td> ". $row["id"] ."</td>
+                        <td> ". $row["name"] ."</td>
+                        <td> ". $row["description"] ."</td>
+                        <td> ". $row["creator"] ."</td>
+                        <td> ". $row["created"] ."</td>
+                        <td> ". $row["statusID"] ."</td>
+                        <td> ". $row["categoryID"] ."</td>
+                        <td> ". $row["category_status"] ."</td>
+       		    	</tr> ";
 
     	}
     	echo $HTML;
@@ -94,7 +108,6 @@ class Post_Controller extends CI_Controller{
 			    		<td> ". $row["categoryID"] ."</td>
 			    		<td> ". $row["category_status"] ."</td>
     		    	</tr> ";
-
     	}
     	echo $HTML;
     }
@@ -111,9 +124,8 @@ class Post_Controller extends CI_Controller{
 			    		<td> ". $row["userAccountID"] ."</td>
 			    		<td> ". $row["threadStatus"] ."</td>
 			    		<td> ". $row["status"] ."</td>
-			    		<td> ". $row["category_id"] ."</td>
+                        <td> ". $row["category_id"] ."</td>
     		    	</tr> ";
-
     	}
     	echo $HTML;
     }
@@ -126,11 +138,35 @@ class Post_Controller extends CI_Controller{
     		$HTML .= "<tr role=\"row\" class=\"odd\">
 			    		<td class=\"sorting_1\">" .$row[id]."</td>
 			    		<td> ". $row["subject"] ."</td>
+                        <td> ". $row["content"] ."</td>
 			    		<td> ". $row["created"] ."</td>
-			    		<td> ". $row["userAccountID"] ."</td>
-			    		<td> ". $row["threadStatus"] ."</td>
+                        <td> ". $row["thread_id"] ."</td>
+			    		<td> ". $row["user_account_id"] ."</td>
+			    		<td> ". $row["postStatus"] ."</td> 
+                        <td> ". $row["insert_date"] ."</td>
+                        <td> ". $row["update_date"] ."</td>
 			    		<td> ". $row["status"] ."</td>
-    		    	</tr> ";
+                        <td> ". $row["category_id"] ."</td>
+                        <td >" .$row[id]."</td>
+                        <td> ". $row["subject"] ."</td>
+                        <td> ". $row["created"] ."</td>
+                        <td> ". $row["UserAccountID"] ."</td>
+                        <td> ". $row["threadStatus"] ."</td>
+                        <td> ". $row["insert_date"] ."</td>
+                        <td> ". $row["update_date"] ."</td>
+                        <td> ". $row["status"] ."</td>
+                        <td> ". $row["category_id"] ."</td>
+                        <td >" .$row[id]."</td>
+                        <td> ". $row["name"] ."</td>
+                        <td> ". $row["description"] ."</td>
+                        <td> ". $row["creator"] ."</td>
+                        <td> ". $row["created"] ."</td>
+                        <td> ". $row["statusID"] ."</td>
+                        <td> ". $row["categoryID"] ."</td>
+                        <td> ". $row["insert_date"] ."</td>
+                        <td> ". $row["update_date"] ."</td>
+                        <td> ". $row["category_status"] ."</td>
+                	</tr> ";
 
     	}
     	echo $HTML;
@@ -146,51 +182,29 @@ class Post_Controller extends CI_Controller{
 			    		<td> ". $row["subject"] ."</td>
 			    		<td> ". $row["created"] ."</td>
 			    		<td> ". $row["userAccountID"] ."</td>
-			    		<td> ". $row["status"] ."</td>
+			    		<td> ". $row["threadStatus"] ."</td>
+                        <td> ". $row["status"] ."</td>
+                        <td> ". $row["category_id"] ."</td>
     		    	</tr> ";
 
     	}
     	echo $HTML;
     }
+
+    public function getAllThreadsAndCategories(){
+        $data = $this->post_model->getAllThreadsAndCategories();
+        $HTML = "";
+
+        foreach ($data as $row) {
+            $HTML .= "<tr role=\"row\" class=\"odd\">
+                        <td> ". $row["thread"] ."</td>
+                        <td> ". $row["categoryID"] ."</td>
+                        <td> ". $row["category_name"] ."</td>
+                    </tr> ";
+
+        }
+        echo $HTML;
+
+    }    
 } 
-
-class post_model extends CI_Model{
-
-	public function getAllPosts(){
-		$SQL ="";
-		$query = $this->db->query($_SQL);
-		return $query->result_array();
-	}	
-
-	public function getPostbyCategory($categoryID){
-		$SQL ="";
-		$query = $this->db->query($_SQL);
-		return $query->result_array();
-	}
-
-	public function getAllCategoryList(){
-		$SQL ="";
-		$query = $this->db->query($_SQL);
-		return $query->result_array();
-	}
-
-    public function getAllThreads(){
-    	$SQL ="";
-		$query = $this->db->query($_SQL);
-		return $query->result_array();
-	}
-    
-    public function getAllThreadsByCategory($CategoryID){
-		$SQL ="";
-		$query = $this->db->query($_SQL);
-		return $query->result_array();
-	}
-
-	public function getAllThreadsByCategoryIrreveland(){
-		$SQL ="";
-		$query = $this->db->query($_SQL);
-		return $query->result_array();
-	}	
-}
-
 ?>
