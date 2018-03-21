@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>SocialEdu</title>
-    <link rel="stylesheet" type="text/css" href="post_style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php  echo base_url()."\assets\global\css\post_style.css" ?>"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <!-- Logo -->
     <div id="header">
         <div class="header">
-            <div class="baslik"><a href="#"><img src="logo.png" alt=""/></a></div>
+            <div class="baslik"><a href="#"><img src="<?php  echo base_url()."\assets\images\logo.png"?>" alt=""/></a></div>
         </div>
     </div>
     <!-- Orta -->
@@ -23,47 +23,47 @@
         </div>
         <!--- Makaleler -->
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık1</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
         </div>
 
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık2</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
         </div>
 
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık3</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
         </div>
 
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık4</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
         </div>
 
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık5</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
         </div>
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık6</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
         </div>
         <div class="makale">
-            <div class="makale-resim"><img src="default.gif" alt=""/></div>
+            <div class="makale-resim"><img src="<?php  echo base_url()."\assets\images\default.gif"?>" alt=""/></div>
             <h1><a href="#">Başlık7</a></h1>
             <p>Yazı</p>
             <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>

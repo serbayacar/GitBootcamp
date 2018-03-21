@@ -13,7 +13,11 @@ class PostGirdi_Controller extends CI_Controller{
         $data["content"] = $this->input->post("icerik");
         $data["created"] = $date('Y-m-d H:i:s');
         
+<<<<<<< HEAD
         if($this->input>-post->["selectKategori"] != NULL ){
+=======
+        if($this->input->post("selectKategori") != NULL ){
+>>>>>>> ecaeb67a980168e7c03ce0b5997b4dbbd7fd4f54
             $data["thread_id"] = $this->input->post("selectKategori");
         }
         
