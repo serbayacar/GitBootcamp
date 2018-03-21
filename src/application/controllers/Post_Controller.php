@@ -3,9 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Post_Controller extends CI_Controller{
 	
     public function index(){
-       $this->load->view('_head');
-       $this->load->view('post_view');
-       $this->load->view('_footer');
+       $this->load->view('post');
     }
 
     public function getAllPosts(){
