@@ -49,18 +49,12 @@ class Post_Controller extends CI_Controller{
     	$HTML = "";
 
     	foreach ($data as $row) {
-    		$HTML .= "<tr role=\"row\" class=\"odd\">
-			    		<td class=\"sorting_1\">" .$row[id]."</td>
-			    		<td> ". $row["subject"] ."</td>
-			    		<td> ". $row["created"] ."</td>
-			    		<td> ". $row["thread_id"] ."</td>
-			    		<td> ". $row["user_account_id"] ."</td>
-			    		<td> ". $row["postStatus"] ."</td>
-                        <td> ". $row["status"] ."</td>
-                        <td> ". $row["category_id"] ."</td>
-
-    		    	</tr> ";
-
+        $HTML .= '<div class="makale">
+                    <div class="makale-resim"><img src="default.gif" alt=""/></div>
+                    <h1><a href="#">'. $row["subject"] .'</a></h1>
+                    <p>'. $row["content"] .'</p>
+                    <div class="makale-alt">10 defa okundu |<a href="#">212 Yorum</a>|<a href="#">Konunun Devamı..</a></div>
+                  </div>';
     	}
     	echo $HTML;
     } 
@@ -98,16 +92,14 @@ class Post_Controller extends CI_Controller{
     	$data = $this->post_model->getAllCategoryList();
     	$HTML = "";
 
-    	foreach ($data as $row) {
-    		$HTML .= "<tr role=\"row\" class=\"odd\">
-			    		<td class=\"sorting_1\">" .$row[id]."</td>
-			    		<td> ". $row["name"] ."</td>
-			    		<td> ". $row["description"] ."</td>
-			    		<td> ". $row["creator"] ."</td>
-			    		<td> ". $row["created"] ."</td>
-			    		<td> ". $row["categoryID"] ."</td>
-			    		<td> ". $row["category_status"] ."</td>
-    		    	</tr> ";
+        foreach ($data as $row) {
+        $HTML .= '<a href="#">'. $row["name"] .'</a>
+                    <ul>
+                        <li class="altBolum"><a href="#">Python</a></li>
+                        <li class="altBolum"><a href="#">C++</a></li>
+                        <li class="altBolum"><a href="#">PHP</a></li>
+                        <li class="altBolum"><a href="#">JavaScript</a></li>
+                    </ul>';
     	}
     	echo $HTML;
     }
