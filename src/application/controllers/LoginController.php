@@ -1,11 +1,9 @@
 <?php
-defined('BASEPATH') 0R exit('No direct script access allowed');
-class LoginController extends CI_Model{
+defined('BASEPATH') OR exit('No direct script access allowed');
+class LoginController extends CI_Controller{
 	
 	public function index(){
-		$this->load->view('_head');
-		$this->load->view('login.html');
-		$this->load->view('_footer');
+		$this->load->view('login');
 	}
 	
 	public function isLogin($userName){
