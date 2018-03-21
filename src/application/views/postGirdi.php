@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Post-SocialEdu</title>
-    <link rel="stylesheet" type="text/css" href="postGirdi_style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php  echo base_url()."\assets\global\css\postGirdi_style.css" ?>"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <!-- Logo -->
     <div id="header">
         <div class="header">
-            <div class="baslik"><a href="#"><img src="logo.png" alt=""/></a></div>
+            <div class="baslik"><a href="#"><img src="<?php  echo base_url()."\assets\images\logo.png"?>" alt=""/></a></div>
         </div>
     </div>
     <!-- Orta -->
