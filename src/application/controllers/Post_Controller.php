@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') 0R exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 class Post_Controller extends CI_Controller{
 	
     public function index(){

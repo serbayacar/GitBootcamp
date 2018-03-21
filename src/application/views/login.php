@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Oturum Aç-SocialEdu</title>
-    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="<?php  echo base_url()."\assets\global\css\loginStyle.css" ?>">
     <!--Google Font - Work Sans-->
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
@@ -13,7 +13,7 @@
 <div class="container">
     <div class="profile">
         <div class="profile_photo">
-            <img src="user_photo.png" alt="Avatar"/>
+            <img src="<?php  echo base_url()."\assets\images\user_photo.png"?>" alt="Avatar"/>
         </div>
         <div class="profile__form">
             <div class="profile__fields">
