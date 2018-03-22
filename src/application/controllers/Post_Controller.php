@@ -7,7 +7,7 @@ class Post_Controller extends CI_Controller{
     }
 
     public function getAllPosts(){
-    	$data = $this->post_model->getAllPosts();
+    	$data = $this->post_Model->getAllPosts();
     	$HTML = "";
 
     	foreach ($data as $row) {
@@ -22,7 +22,7 @@ class Post_Controller extends CI_Controller{
     } 
 
     public function getPostbyCategory($categoryID){
-    	$data = $this->post_model->getPostbyCategory($categoryID);
+    	$data = $this->post_Model->getPostbyCategory($categoryID);
     	$HTML = "";
     	
     	foreach ($data as $row) {
@@ -51,7 +51,7 @@ class Post_Controller extends CI_Controller{
     }   
 
     public function getAllCategoryList(){
-    	$data = $this->post_model->getAllCategoryList();
+    	$data = $this->post_Model->getAllCategoryList();
     	$HTML = "";
 
         foreach ($data as $row) {
@@ -67,7 +67,7 @@ class Post_Controller extends CI_Controller{
     }
 
     public function getAllThreads(){
-    	$data = $this->post_model->getAllThreads();
+    	$data = $this->post_Model->getAllThreads();
     	$HTML = "";
 
     	foreach ($data as $row) {
@@ -85,7 +85,7 @@ class Post_Controller extends CI_Controller{
     }
 
      public function getAllThreadsByCategory($CategoryID){
-    	$data = $this->post_model->getAllThreadsByCategory($CategoryID);
+    	$data = $this->post_Model->getAllThreadsByCategory($CategoryID);
     	$HTML = "";
 
     	foreach ($data as $row) {
@@ -127,7 +127,7 @@ class Post_Controller extends CI_Controller{
     }
 
     public function getAllThreadsByCategoryIrreveland(){
-    	$data = $this->post_model->getAllThreadsByCategoryIrreveland();
+    	$data = $this->post_Model->getAllThreadsByCategoryIrreveland();
     	$HTML = "";
 
     	foreach ($data as $row) {
@@ -146,7 +146,7 @@ class Post_Controller extends CI_Controller{
     }
 
     public function getAllThreadsAndCategories(){
-        $data = $this->post_model->getAllThreadsAndCategories();
+        $data = $this->post_Model->getAllThreadsAndCategories();
         $HTML = "";
 
         foreach ($data as $row) {

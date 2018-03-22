@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class PostGirdi_Controller extends CI_Controller{
 	
 	public function index(){
-       $this->load->view('post');
+       $this->load->view('postGirdi');
     }
 	
 	public function insertPost(){
