@@ -2,25 +2,25 @@ body {
     margin: auto;
     font: 12px Tahoma;
     background: white;
+    background: linear-gradient(to bottom, #d5eabd 0%, #497BE8 100%);
 }
 
 img {
     border: none;
 }
 
-a {
-    text-decoration: none;
-    color: #185798;
+input {
+    border: #5e5e5e;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    width: auto;
 }
 
-ul {
-    list-style-type: none;
-}
-
-table, tr, td, h1, h2, h3, h4, h5, h6, p, pre, ul, li, input, textarea {
-    margin: 0;
-    padding: 0;
-    border: none;
+textarea {
+    resize: vertical;
+    max-height: 500px;
+    min-height: 100px;
 }
 
 :focus {
@@ -52,145 +52,64 @@ table, tr, td, h1, h2, h3, h4, h5, h6, p, pre, ul, li, input, textarea {
     background: white;
 }
 
-/* Orta */
-#orta {
-    width: 660px;
+/* Post */
+#post {
+    width: 960px;
     float: left;
-    margin: 5px 50px 10px 10px;
+    margin-top: 25px;
     background-color: #dfdfdf;
 }
 
-/* Orta Başlık */
-.orta-bas {
-    background: white;
-    width: 660px;
-    height: 35px;
+.label {
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    font-weight: bold;
 }
 
-.orta-bas2 {
-    color: #78b66e;
-    font-size: 14pt;
-    padding: 4px 10px;
+#title {
+    margin: 20px 20px 20px 20px;
+    width: 820px;
+    height: 30px;
 }
 
-/* Makaleler */
-.makale {
-    padding: 5px;
-    border-bottom: 3px solid #ebebeb;
+#selectKategori {
+    margin: 20px 0 20px 5px;
+    width:820px;
 }
 
-.makale h1 a {
-    font-size: 13pt;
-    padding: 2px 10px 2px 0;
-    color: #4396cc;
+#altBaslik {
+    margin: 20px 0 20px 5px;
+    width:820px;
 }
 
-.makale h1 a:hover {
-    color: #82a4c2;
+#icerik {
+    margin: 0 20px 20px 100px;
+    width: 835px;
+    height: 300px;
 }
 
-.makale p {
-    padding: 3px 12px;
-    color: #5e5e5e;
-    text-align: justify;
-}
-
-.makale-resim {
+.btn {
+    border: 0;
     float: left;
-    margin-right: 5px;
+    margin: 0 20px 20px 20px;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    padding: 0 1.0rem;
+    color: white;
+    background: #47b1e8;
+    text-transform: uppercase;
+    border-radius: .20rem;
+    letter-spacing: .18em;
+    transition: background .2s;
+    cursor: pointer;
 }
 
-.makale-resim img {
-    width: 70px;
-    height: 70px;
+.btn:focus {
+    outline: 0;
 }
 
-.makale-alt {
-    text-align: right;
-    padding: 5px;
-    color: #4396cc;
+.btn:hover,
+.btn:focus {
+    background: #A678E2;
 }
 
-.makale-alt a {
-    padding: 3px 5px;
-    color: #4396cc;
-}
-
-.makale-alt a:hover {
-    background-color: #4396cc;
-    color: #fff;
-}
-
-/* Sıralama */
-#siralama {
-    padding: 10px;
-    background: white;
-}
-
-#siralama span {
-    background-color: #4396cc;
-    padding: 5px 10px;
-    color: #fff;
-    margin-right: 2px;
-}
-
-#siralama a {
-    padding: 5px 10px;
-    margin-right: 2px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
-
-#siralama a:hover {
-    background-color: #4396cc;
-    color: #fff;
-}
-
-/* Sağ */
-#sag {
-    width: 230px;
-    float: left;
-    margin-top: 5px;
-}
-
-/* Sağ Başlık */
-.sag-bas {
-    background: none;
-    width: 230px;
-    height: 35px;
-}
-
-.sag-bas2 {
-    color: #78b66e;
-    font-size: 14pt;
-    padding: 4px 10px;
-}
-
-/* Arşiv */
-#kategoriler {
-    background-color: white;
-    border-bottom: 3px solid #ddd;
-    margin-bottom: 10px;
-}
-
-#kategoriler a {
-    background: url(right.gif) no-repeat 1px;
-    display: block;
-    padding: 5px 20px;
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #ddd;
-    color: #333333;
-}
-
-#kategoriler li a {
-    background: none;
-    display: block;
-    padding: 5px 20px;
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #ddd;
-    color: #333333;
-}
-
-#kategoriler a:hover {
-    background: #78b66e;
-}
