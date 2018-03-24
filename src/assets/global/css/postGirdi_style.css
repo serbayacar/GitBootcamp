@@ -2,6 +2,7 @@ body {
     margin: auto;
     font: 12px Tahoma;
     background: white;
+    background: linear-gradient(to bottom, #d5eabd 0%, #497BE8 100%);
 }
 
 img {
@@ -72,11 +73,13 @@ textarea {
 }
 
 #selectKategori {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0 20px 5px;
+    width:820px;
 }
 
 #altBaslik {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0 20px 5px;
+    width:820px;
 }
 
 #icerik {
@@ -109,4 +112,3 @@ textarea {
 .btn:focus {
     background: #A678E2;
 }
-
